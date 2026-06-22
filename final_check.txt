@@ -1,0 +1,6 @@
+﻿STILL BROKEN: index.html has 9 replacement chars
+CLEAN: about.html
+CLEAN: contact.html
+CLEAN: gallery.html
+CLEAN: archives.html
+CLEAN: outreach.html

@@ -1,0 +1,7 @@
+﻿=== about.html ===
+  L7:   <meta name="description" content="Learn more about Adesewa  ?? Adesewa ????, Philanthropist, and Destiny Helper." />
+  L93:                 Queen <br/><span class="text-gold-glow">?? Adesewa ????</span>
+  L141:             <div style="width:48px;height:48px;border-radius:50%;background:rgba(245,183,49,0.12);border:1px solid rgba(
+  L146:             <div style="width:48px;height:48px;border-radius:50%;background:rgba(245,183,49,0.12);border:1px solid rgba(
+  L151:             <div style="width:48px;height:48px;border-radius:50%;background:rgba(245,183,49,0.12);border:1px solid rgba(
+  L224:   <!-- ?? EDIT YOUR STATS HERE  no need to open any other file -->

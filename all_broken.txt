@@ -1,0 +1,41 @@
+﻿L24:   <!-- Anti-flash theme init ∩┐╜ must be blocking, before body renders -->
+L74:     <button class="theme-btn active" data-theme="dark" title="Dark" aria-pressed="true">∩┐╜</button>
+L75:     <button class="theme-btn" data-theme="light" title="Light" aria-pressed="false">∩┐╜</button>
+L76:     <button class="theme-btn" data-theme="neon" title="Neon" aria-pressed="false">∩┐╜</button>
+L93:           <button class="theme-btn active" data-theme="dark" title="Dark">∩┐╜</button>
+L94:           <button class="theme-btn" data-theme="light" title="Light">∩┐╜</button>
+L95:           <button class="theme-btn" data-theme="neon" title="Neon">∩┐╜</button>
+L147:               <h1 class="hero-title"><span class="hero-title-gold">∩┐╜ Adesewa<span class="hero-title-emoji">∩┐╜∩┐╜</span></span></h1>
+L153:               TikTok Coach and Box Game Host &nbsp;∩┐╜&nbsp; Come LIVE with me <strong style="color:var(--gold)">Mon to Fri at 5PM MST, 6PM CST, 7PM EST and 12AM GMT</strong>
+L176:                 <p class="stat-number">∩┐╜</p>
+L181:                 <p class="stat-number">∩┐╜</p>
+L186:                 <p class="stat-number">∩┐╜</p>
+L201:         <!-- ∩┐╜ UPCOMING BATTLE NOTIFICATION ∩┐╜ edit text below -->
+L205:             <span class="hero-upcoming-tag">∩┐╜ Next Official Battle</span>
+L210:           <div class="hero-upcoming-arrow">∩┐╜</div>
+L241:         <!-- 3 MVP Cards ∩┐╜ centred grid, no carousel -->
+L251:               <h3 class="card-name">Sparks ∩┐╜</h3>
+L474:                 <p class="join-step-desc">Whether you won the box or not, you showed up and that is what counts. You are part of something real now. A community that actually lifts each other up. Welcome in. ∩┐╜∩┐╜</p>
+L496:       ∩┐╜ HOW TO EDIT THE SCHEDULE:
+L521:         <!-- ∩┐╜ SCHEDULE CARDS ∩┐╜ edit each card below -->
+L528:                 <span class="sched-status-pill upcoming">∩┐╜ Upcoming</span>
+L539:                   <!-- ∩┐╜ Edit opponent name below -->
+L544:                 <!-- ∩┐╜ Edit date, time, platform below -->
+L559:                 <a href="https://www.tiktok.com/@sewa_hairmpire" target="_blank" rel="noopener noreferrer" class="sched-watch-btn">Get Notified ∩┐╜</a>
+L569:                 <span class="sched-status-pill upcoming">∩┐╜ Upcoming</span>
+L598:                 <a href="https://www.tiktok.com/@sewa_hairmpire" target="_blank" rel="noopener noreferrer" class="sched-watch-btn">Get Notified ∩┐╜</a>
+L608:                 <span class="sched-status-pill upcoming">∩┐╜ Upcoming</span>
+L637:                 <a href="https://www.tiktok.com/@sewa_hairmpire" target="_blank" rel="noopener noreferrer" class="sched-watch-btn">Get Notified ∩┐╜</a>
+L644:         <!-- ∩┐╜ END SCHEDULE CARDS -->
+L727:             <div class="review-stars">∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜</div>
+L728:             <p class="review-text">"Adesewa is a remarkable woman whose heart for people shines through in everything she does. As a TikTok host, she goes beyond entertaining others by genuinely caring for the people around her and creating a space where people feel seen, heard, and supported. She is always looking out for others, encouraging them to know their worth, understand their rights, and stand confidently in truth. Her kindness, compassion, and willingness to help make her a strong voice for those who may not always have one. Adesewa truly embodies the meaning of ∩┐╜love your neighbor as yourself,∩┐╜ consistently showing love, empathy, and support to everyone she encounters."</p>
+L739:             <div class="review-stars">∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜</div>
+L740:             <p class="review-text">"She∩┐╜s intelligent, she∩┐╜s smart, she∩┐╜s accommodating and beautiful.. She has a beautiful aura and a good personality her smile is contagious.. She be sharp babe∩┐╜∩┐╜∩┐╜and I love her for that.."</p>
+L751:             <div class="review-stars">∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜</div>
+L763:             <div class="review-stars">∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜</div>
+L775:             <div class="review-stars">∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜</div>
+L787:             <div class="review-stars">∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜</div>
+L876:     /* ∩┐╜∩┐╜ Hero multi-slide crossfade ∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜∩┐╜ */
+L935:   <!-- ∩┐╜ EDIT YOUR STATS HERE ∩┐╜ no need to open any other file -->
+L945:   <!-- ∩┐╜ UPCOMING BATTLE NOTIFICATION ∩┐╜ edit below to update the hero card & slide notification -->
+L952:       // ∩┐╜ Edit these values:

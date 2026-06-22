@@ -1,0 +1,20 @@
+﻿1: ∩╗┐<!DOCTYPE html>
+2: <html lang="en">
+3: <head>
+4:   <meta charset="UTF-8" />
+5:   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+6:   <title>├░┼╕ΓÇÿΓÇÿ Adesewa ├░┼╕ΓÇÖΓÇö├░┼╕┬ªΓÇª</title>
+7:   <meta name="description" content="TikTok Coach and Box Game Host. I go LIVE Mon-Fri at 5PM MST, 6PM CST, 7PM EST and 12AM GMT. Come box battle with me, join the family and let's build together. The Quickers Agency Manager." />
+8:   <meta name="keywords" content="Adesewa,├░┼╕ΓÇÿΓÇÿ Adesewa ├░┼╕ΓÇÖΓÇö├░┼╕┬ªΓÇª,Destiny Helper,Adesewa Family,Box Battles,TikTok Gifter,Philanthropist,Adesewa Community,TikTok Entertainment" />
+9:   <meta property="og:title" content="├░┼╕ΓÇÿΓÇÿ Adesewa ├░┼╕ΓÇÖΓÇö├░┼╕┬ªΓÇª" />
+10:   <meta property="og:description" content="TikTok Coach and Box Game Host. I go LIVE Mon-Fri at 5PM MST, 6PM CST, 7PM EST and 12AM GMT. Come box battle, join the Adesewa Family and let's grow together." />
+11:   <meta property="og:url" content="https://adesewa.org" />
+12:   <meta property="og:site_name" content="Adesewa" />
+13:   <meta property="og:locale" content="en_GB" />
+14:   <meta property="og:type" content="website" />
+15:   <meta name="twitter:card" content="summary_large_image" />
+16:   <meta name="twitter:title" content="├░┼╕ΓÇÿΓÇÿ Adesewa ├░┼╕ΓÇÖΓÇö├░┼╕┬ªΓÇª" />
+17:   <meta name="twitter:description" content="TikTok Coach and Box Game Host. I go LIVE Mon-Fri at 5PM MST, 6PM CST, 7PM EST and 12AM GMT. Come box battle, join the Adesewa Family and let's grow together." />
+18:   <link rel="icon" href="assets/logo-transparent.png" />
+19:   <link rel="apple-touch-icon" href="assets/logo-transparent.png" />
+20:   <link rel="preconnect" href="https://fonts.googleapis.com" />

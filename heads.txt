@@ -1,0 +1,5 @@
+﻿about.html:6: '<title>About | Adesewa</title>'
+contact.html:6: '<title>Contact | Adesewa</title>'
+gallery.html:6: '<title>Gallery | Adesewa</title>'
+archives.html:6: '<title>Previous Livestreams | Adesewa</title>'
+outreach.html:6: '<title>Outreach | Adesewa</title>'

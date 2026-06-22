@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Adesewa</title>
+  <meta name="description" content="Learn more about Adesewa  👑 Adesewa 💗🦅, Philanthropist, and Destiny Helper." />
+  <link rel="icon" href="assets/logo-transparent.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Anti-flash theme init -->
+  <script>
+    (function(){
+      var t = localStorage.getItem('ade-theme');
+      if(t === 'light' || t === 'neon') document.documentElement.setAttribute('data-theme', t);
+      else document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-bg"></div>
+    <div class="header-line-top"></div>
+    <div class="header-inner">
+      <nav class="nav-left desktop-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html" style="color:rgba(255,255,255,0.9)">About</a>
+        <a class="nav-link" href="outreach.html">Outreach</a>
+      </nav>
+      <a class="logo-link" href="index.html" aria-label="Adesewa home">
+        <div class="logo-wrap">
+          <img src="assets/logo-transparent.png" alt="Adesewa Logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="logo-text-fallback">Adesewa</div>
+          <div class="logo-glow"></div>
+        </div>
+      </a>
+      <nav class="nav-right desktop-nav">
+        <a class="nav-link" href="archives.html">Previous Livestreams</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+        <span class="ham-line" style="width:28px"></span>
+        <span class="ham-line" style="width:20px"></span>
+        <span class="ham-line" style="width:18px"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <a class="mobile-nav-link" href="index.html">Home</a>
+      <a class="mobile-nav-link" href="about.html">About</a>
+      <a class="mobile-nav-link" href="outreach.html">Outreach</a>
+      <a class="mobile-nav-link" href="archives.html">Previous Livestreams</a>
+      <a class="mobile-nav-link" href="gallery.html">Gallery</a>
+      <a class="mobile-nav-link" href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Page Hero -->
+    <div class="page-hero" style="background:var(--bg-dark)">
+      <div class="page-hero-bg" style="background-image:url('assets/hero-desktop.jpg')"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <div class="section-eyebrow">
+          <div class="eyebrow-line"></div>
+          <span class="eyebrow-text">The Story</span>
+        </div>
+        <h1 class="page-title">About <span class="text-gold-glow">Adesewa</span></h1>
+      </div>
+    </div>
+
+    <!-- Bio Section -->
+    <section class="content-section" style="background:var(--bg-dark)">
+      <div class="section-container">
+        <div style="display:grid;grid-template-columns:1fr;gap:4rem;align-items:start;">
+
+          <div style="display:grid;grid-template-columns:1fr;gap:4rem;" class="about-grid">
+            <div class="content-block reveal">
+              <div class="section-eyebrow" style="margin-bottom:1.5rem">
+                <div class="eyebrow-line"></div>
+                <span class="eyebrow-text">Who I Am</span>
+              </div>
+              <h2 style="font-family:var(--font-serif);font-size:clamp(2rem,4vw,3.5rem);color:var(--white);line-height:0.95;margin-bottom:1.5rem;font-weight:700">
+                Queen <br/><span class="text-gold-glow">👑 Adesewa 💗🦅</span>
+              </h2>
+              <p>Adesewa is a vibrant force on TikTok, a content creator, philanthropist, and community builder who has built a loyal family of followers through authenticity, energy, and genuine care for people.</p>
+              <p>Known for high-energy box battles, Beauty contests, Most Beautiful and Most Handsome box games, daily livestreams, and an infectious personality, Adesewa has become one of TikTok's most celebrated figures; not just for entertainment, but for the real-world impact she creates through charitable giving and community support.</p>
+              <p>The name "Adesewa" means <em>"the crown befits beauty"</em>  a fitting name for someone who has crowned herself with purpose, passion, and a heart for helping others.</p>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;" class="reveal">
+              <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:1.25rem;padding:1.75rem;">
+                <p class="about-stat-number" id="about-followers" style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:var(--white);line-height:1"></p>
+                <p style="font-size:9px;text-transform:uppercase;letter-spacing:0.28em;color:var(--gold);margin-top:0.5rem;font-weight:600">Followers</p>
+              </div>
+              <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:1.25rem;padding:1.75rem;">
+                <p class="about-stat-number" id="about-likes" style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:var(--white);line-height:1"></p>
+                <p style="font-size:9px;text-transform:uppercase;letter-spacing:0.28em;color:var(--gold);margin-top:0.5rem;font-weight:600">Total Likes</p>
+              </div>
+              <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:1.25rem;padding:1.75rem;">
+                <p class="about-stat-number" id="about-battles" style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:var(--white);line-height:1"></p>
+                <p style="font-size:9px;text-transform:uppercase;letter-spacing:0.28em;color:var(--gold);margin-top:0.5rem;font-weight:600">Box Battles Won</p>
+              </div>
+              <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:1.25rem;padding:1.75rem;">
+                <p class="about-stat-number" id="about-streams" style="font-family:var(--font-serif);font-size:2.5rem;font-weight:700;color:var(--white);line-height:1"></p>
+                <p style="font-size:9px;text-transform:uppercase;letter-spacing:0.28em;color:var(--gold);margin-top:0.5rem;font-weight:600">Livestreams</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="content-section alt">
+      <div class="section-container">
+        <div style="max-width:800px;margin:0 auto;text-align:center">
+          <div class="section-eyebrow centered reveal">
+            <div class="eyebrow-line"></div>
+            <span class="eyebrow-text">Mission</span>
+            <div class="eyebrow-line"></div>
+          </div>
+          <h2 class="section-title centered reveal">"Helping <span class="text-gold-glow">Destinies</span><br/>One Battle at a Time"</h2>
+          <p class="section-desc" style="margin:0 auto 2rem;text-align:center;max-width:56ch;color:rgba(255,255,255,0.5)" class="reveal">
+            Adesewa believes that a platform is only as powerful as the good it creates. Every box battle, every livestream, every gift received is an opportunity to redistribute blessings  helping people in need, supporting causes, and uplifting communities worldwide.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:1.25rem;margin-top:4rem" class="values-grid">
+          <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:1.5rem;padding:2rem;" class="reveal">
+            <div style="width:48px;height:48px;border-radius:50%;background:rgba(245,183,49,0.12);border:1px solid rgba(245,183,49,0.25);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;font-size:1.4rem">👑</div>
+            <h3 style="font-family:var(--font-serif);font-size:1.5rem;color:var(--white);margin-bottom:0.75rem;font-weight:700">Royalty in Character</h3>
+            <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7">Leading with grace, authenticity, and unwavering integrity in everything she does.</p>
+          </div>
+          <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:1.5rem;padding:2rem;" class="reveal reveal-delay-1">
+            <div style="width:48px;height:48px;border-radius:50%;background:rgba(245,183,49,0.12);border:1px solid rgba(245,183,49,0.25);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;font-size:1.4rem">💝</div>
+            <h3 style="font-family:var(--font-serif);font-size:1.5rem;color:var(--white);margin-bottom:0.75rem;font-weight:700">Generosity First</h3>
+            <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7">Giving back is not optional  it's a lifestyle. Adesewa uses her platform to actively support charitable causes.</p>
+          </div>
+          <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:1.5rem;padding:2rem;" class="reveal reveal-delay-2">
+            <div style="width:48px;height:48px;border-radius:50%;background:rgba(245,183,49,0.12);border:1px solid rgba(245,183,49,0.25);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;font-size:1.4rem">🤝</div>
+            <h3 style="font-family:var(--font-serif);font-size:1.5rem;color:var(--white);margin-bottom:0.75rem;font-weight:700">Community Above All</h3>
+            <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7">The Adesewa Family is not just an audience  they are co-creators of every moment, every memory, every miracle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="social-cta-section" style="padding:5rem 0">
+      <div class="social-cta-bg" style="background-image:url('assets/bgs/bg3.jpg')"></div>
+      <div class="social-cta-overlay"></div>
+      <div class="section-container">
+        <div class="social-cta-inner">
+          <h2 class="section-title centered reveal">Ready to Join the <span class="text-gold-glow">Family</span>?</h2>
+          <p class="social-cta-desc reveal">Follow Adesewa on TikTok and become part of a community that genuinely cares about each other.</p>
+          <a href="https://www.tiktok.com/@sewa_hairmpire" target="_blank" rel="noopener noreferrer" class="btn-gold large reveal" id="about-cta-btn">
+            <span>Follow on TikTok</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top-line"></div>
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-link">
+            <img src="assets/logo-transparent.png" alt="Adesewa Logo" class="footer-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+            <span class="footer-logo-text-fallback">Adesewa</span>
+          </a>
+          <p class="footer-tagline">TikTok Coach &amp; Box Game Host • The Quickers Agency Manager</p>
+          <p class="footer-copy">&copy; <span id="footer-year">2025</span> Adesewa. All rights reserved.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigate</h4>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="about.html">About</a>
+          <a class="footer-link" href="outreach.html">Outreach</a>
+          <a class="footer-link" href="archives.html">Previous Livestreams</a>
+          <a class="footer-link" href="gallery.html">Gallery</a>
+          <a class="footer-link" href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <a class="footer-link" href="https://www.tiktok.com/@sewa_hairmpire?_r=1&_t=ZS-96aJlwJWCJE" id="footer-tiktok">TikTok</a>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <p class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:hello@adesewa.org" id="footer-email">hello@adesewa.org</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @media (min-width:768px) {
+      .about-grid { grid-template-columns: 1fr 1fr !important; }
+      .values-grid { grid-template-columns: repeat(3,1fr) !important; }
+    }
+  </style>
+
+  <script src="js/main.js"></script>
+  <script src="js/gemgun.js"></script>
+  <script src="js/moneygun.js"></script>
+  <!-- 📊 EDIT YOUR STATS HERE  no need to open any other file -->
+  <script>
+    window.ADESEWA_STATS = {
+      followers:  '15.5K',   // TikTok followers
+      likes:      '73.9K',   // Total TikTok likes
+      streams:    '300+',    // Total livestreams
+      battlesWon: '10+'      // Box battles won
+    };
+  </script>
+  <script src="js/tiktok-stats.js"></script>
+  <script src="js/theme-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Previous Livestreams | Adesewa</title>
+  <meta name="description" content="Watch archived box battle livestreams from Adesewa. Catch up on all the highlights." />
+  <link rel="icon" href="assets/logo-transparent.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Anti-flash theme init -->
+  <script>
+    (function(){
+      var t = localStorage.getItem('ade-theme');
+      if(t === 'light' || t === 'neon') document.documentElement.setAttribute('data-theme', t);
+      else document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="header-bg"></div>
+    <div class="header-line-top"></div>
+    <div class="header-inner">
+      <nav class="nav-left desktop-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="outreach.html">Outreach</a>
+      </nav>
+      <a class="logo-link" href="index.html" aria-label="Adesewa home">
+        <div class="logo-wrap">
+          <img src="assets/logo-transparent.png" alt="Adesewa Logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="logo-text-fallback">Adesewa</div>
+          <div class="logo-glow"></div>
+        </div>
+      </a>
+      <nav class="nav-right desktop-nav">
+        <a class="nav-link" href="archives.html" style="color:rgba(255,255,255,0.9)">Previous Livestreams</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+        <span class="ham-line" style="width:28px"></span>
+        <span class="ham-line" style="width:20px"></span>
+        <span class="ham-line" style="width:18px"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <a class="mobile-nav-link" href="index.html">Home</a>
+      <a class="mobile-nav-link" href="about.html">About</a>
+      <a class="mobile-nav-link" href="outreach.html">Outreach</a>
+      <a class="mobile-nav-link" href="archives.html">Previous Livestreams</a>
+      <a class="mobile-nav-link" href="gallery.html">Gallery</a>
+      <a class="mobile-nav-link" href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="page-hero-bg" style="background-image:url('assets/hero-desktop.jpg')"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <div class="section-eyebrow">
+          <div class="eyebrow-line"></div>
+          <span class="eyebrow-text">Catch Up</span>
+        </div>
+        <h1 class="page-title">Previous <span class="text-gold-glow">Livestreams</span></h1>
+      </div>
+    </div>
+
+    <section class="content-section" style="background:var(--bg-dark)">
+      <div class="section-container">
+
+        <div style="max-width:600px;margin-bottom:4rem" class="reveal">
+          <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75">
+            Missed a live box battle? No worries  browse all of Adesewa's archived livestreams below. Every battle, every moment, always available to replay.
+          </p>
+        </div>
+
+                <div class="archives-grid">
+
+          <!-- VIDEO CARD 1 -->
+          <div class="archive-card reveal" id="archive-1">
+            <div class="archive-thumb">
+              <video class="archive-video" src="assets/archives/stream1.mp4" preload="metadata" playsinline></video>
+              <div class="archive-play-overlay" onclick="toggleVideo(this)">
+                <div class="archive-play-btn">
+                  <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="archive-meta">
+              <p class="archive-date"> 2026</p>
+              <h3 class="archive-title">MakeUp Box Battle Livestream</h3>
+              <p class="archive-desc">Epic Moments- watch the highlights from this incredible session.</p>
+            </div>
+          </div>
+
+          <!-- VIDEO CARD 2 -->
+          <div class="archive-card reveal reveal-delay-1" id="archive-2">
+            <div class="archive-thumb">
+              <video class="archive-video" src="assets/archives/stream2.mp4" preload="metadata" playsinline></video>
+              <div class="archive-play-overlay" onclick="toggleVideo(this)">
+                <div class="archive-play-btn">
+                  <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="archive-meta">
+              <p class="archive-date"> 2026</p>
+              <h3 class="archive-title">Box Battle Livestream</h3>
+              <p class="archive-desc">An unforgettable session with the community. The family showed up!</p>
+            </div>
+          </div>
+
+          <!-- VIDEO CARD 3 -->
+          <div class="archive-card reveal reveal-delay-2" id="archive-3">
+            <div class="archive-thumb">
+              <video class="archive-video" src="assets/archives/stream3.mp4" preload="metadata" playsinline></video>
+              <div class="archive-play-overlay" onclick="toggleVideo(this)">
+                <div class="archive-play-btn">
+                  <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="archive-meta">
+              <p class="archive-date"> 2026</p>
+              <h3 class="archive-title">Box Battle Livestream</h3>
+              <p class="archive-desc">Watch the action unfold in this thrilling battle session.</p>
+            </div>
+          </div>
+
+          <!-- VIDEO CARD 4 -->
+          <div class="archive-card reveal" id="archive-4">
+            <div class="archive-thumb">
+              <video class="archive-video" src="assets/archives/stream4.mp4" preload="metadata" playsinline></video>
+              <div class="archive-play-overlay" onclick="toggleVideo(this)">
+                <div class="archive-play-btn">
+                  <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="archive-meta">
+              <p class="archive-date"> 2026</p>
+              <h3 class="archive-title">Box Battle Livestream</h3>
+              <p class="archive-desc">Community rallied together  another victory for the family!</p>
+            </div>
+          </div>
+
+          <!-- VIDEO CARD 5 -->
+          <div class="archive-card reveal reveal-delay-1" id="archive-5">
+            <div class="archive-thumb">
+              <video class="archive-video" src="assets/archives/stream5.mp4" preload="metadata" playsinline></video>
+              <div class="archive-play-overlay" onclick="toggleVideo(this)">
+                <div class="archive-play-btn">
+                  <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="archive-meta">
+              <p class="archive-date"> 2026</p>
+              <h3 class="archive-title">Box Battle Livestream</h3>
+              <p class="archive-desc">The energy was unmatched. Don't miss a moment of this one.</p>
+            </div>
+          </div>
+
+          <!-- VIDEO CARD 6 -->
+          <div class="archive-card reveal reveal-delay-2" id="archive-6">
+            <div class="archive-thumb">
+              <video class="archive-video" src="assets/archives/stream6.mp4" preload="metadata" playsinline></video>
+              <div class="archive-play-overlay" onclick="toggleVideo(this)">
+                <div class="archive-play-btn">
+                  <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="archive-meta">
+              <p class="archive-date"> 2026</p>
+              <h3 class="archive-title">Box Battle Livestream</h3>
+              <p class="archive-desc">A legendary session. The Adesewa family was in full force!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top-line"></div>
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-link">
+            <img src="assets/logo-transparent.png" alt="Adesewa Logo" class="footer-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+            <span class="footer-logo-text-fallback">Adesewa</span>
+          </a>
+          <p class="footer-tagline">TikTok Coach &amp; Box Game Host • The Quickers Agency Manager</p>
+          <p class="footer-copy">&copy; <span id="footer-year">2025</span> Adesewa. All rights reserved.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigate</h4>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="about.html">About</a>
+          <a class="footer-link" href="outreach.html">Outreach</a>
+          <a class="footer-link" href="archives.html">Previous Livestreams</a>
+          <a class="footer-link" href="gallery.html">Gallery</a>
+          <a class="footer-link" href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <a class="footer-link" href="https://www.tiktok.com/@sewa_hairmpire?_r=1&_t=ZS-96aJlwJWCJE">TikTok</a>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <p class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:hello@adesewa.org">hello@adesewa.org</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* -- 9:16 Portrait video grid ---------------------------------- */
+    .archives-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+    @media (min-width: 640px)  { .archives-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } }
+    @media (min-width: 1024px) { .archives-grid { grid-template-columns: repeat(3, 1fr); gap: 2rem;   } }
+
+    .archive-card { display: flex; flex-direction: column; gap: 0.85rem; }
+
+    /* Thumb  locked to 9:16 portrait ---------------------------- */
+    .archive-thumb {
+      position: relative;
+      aspect-ratio: 9 / 16;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      background: #0a0a0a;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.55);
+    }
+
+    /* Gradient fade so title is always readable -------------------- */
+    .archive-thumb::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(to top,
+        rgba(7,8,14,0.80) 0%,
+        rgba(7,8,14,0.08) 45%,
+        transparent       70%
+      );
+    }
+
+    /* The video itself -------------------------------------------- */
+    .archive-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #000;
+    }
+
+    /* Play / pause overlay ---------------------------------------- */
+    .archive-play-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.25s;
+      background: rgba(0,0,0,0.22);
+    }
+    .archive-play-overlay.playing       { background: transparent; }
+    .archive-play-overlay.playing:hover { background: rgba(0,0,0,0.18); }
+
+    /* Play button ------------------------------------------------- */
+    .archive-play-btn {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: rgba(7,8,14,0.6);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1.5px solid rgba(245,183,49,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      transition: transform 0.22s, background 0.22s, box-shadow 0.22s;
+    }
+    .archive-play-overlay:hover .archive-play-btn {
+      transform: scale(1.13);
+      background: var(--gold, #f5b731);
+      color: #000;
+      box-shadow: 0 0 28px rgba(245,183,49,0.6);
+    }
+    /* Gold pulse ring while playing */
+    .archive-play-overlay.playing .archive-play-btn {
+      border-color: var(--gold, #f5b731);
+      animation: vid-pulse 2s ease-in-out infinite;
+    }
+    @keyframes vid-pulse {
+      0%,100% { box-shadow: 0 0 0 0   rgba(245,183,49,0.5); }
+      50%      { box-shadow: 0 0 0 10px rgba(245,183,49,0); }
+    }
+
+    /* Prevent native controls stealing clicks */
+    .archive-video:not([controls]) { pointer-events: none; }
+  </style>
+
+  <script src="js/main.js"></script>
+  <script src="js/gemgun.js"></script>
+  <script src="js/moneygun.js"></script>
+  <script src="js/tiktok-stats.js"></script>
+  <script>
+    // -- Auto-extract first frame as thumbnail ------------------------------
+    // Seeks each video to 0.01s after metadata loads so the browser renders
+    // the first frame  works without any separate poster image files.
+    document.querySelectorAll('.archive-video').forEach(video => {
+      // If no poster already set, auto-grab first frame
+      if (!video.getAttribute('poster')) {
+        video.addEventListener('loadedmetadata', () => {
+          video.currentTime = 0.01;
+        });
+        // Once seeked, currentTime is set  browser paints that frame
+        video.addEventListener('seeked', () => {
+          // Nothing more needed  browser displays the frame naturally
+        }, { once: true });
+      }
+      // On end • reset overlay to play state
+      video.addEventListener('ended', () => {
+        const ov = video.closest('.archive-thumb').querySelector('.archive-play-overlay');
+        resetOverlay(ov);
+        video.currentTime = 0.01; // reset to first frame thumbnail
+      });
+    });
+
+    // -- Helper: reset overlay to play state -------------------------------
+    function resetOverlay(overlay) {
+      overlay.classList.remove('playing');
+      overlay.querySelector('.play-icon').style.display  = '';
+      overlay.querySelector('.pause-icon').style.display = 'none';
+    }
+
+    // -- Toggle play / pause on click --------------------------------------
+    function toggleVideo(overlay) {
+      const video   = overlay.closest('.archive-thumb').querySelector('.archive-video');
+      const playIc  = overlay.querySelector('.play-icon');
+      const pauseIc = overlay.querySelector('.pause-icon');
+
+      if (video.paused) {
+        // Pause every other playing video first
+        document.querySelectorAll('.archive-video').forEach(v => {
+          if (v !== video && !v.paused) {
+            v.pause();
+            resetOverlay(v.closest('.archive-thumb').querySelector('.archive-play-overlay'));
+          }
+        });
+        video.play();
+        overlay.classList.add('playing');
+        playIc.style.display  = 'none';
+        pauseIc.style.display = '';
+      } else {
+        video.pause();
+        resetOverlay(overlay);
+      }
+    }
+  </script>
+  <script src="js/theme-toggle.js"></script>
+</body>
+</html>

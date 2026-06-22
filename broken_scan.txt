@@ -1,0 +1,21 @@
+﻿=== index.html: 41 broken lines ===
+  L24: <!-- Anti-flash theme init ∩┐╜ must be blocking, before body renders -->
+  L74: <button class="theme-btn active" data-theme="dark" title="Dark" aria-pressed="true">∩┐╜</button>
+  L75: <button class="theme-btn" data-theme="light" title="Light" aria-pressed="false">∩┐╜</button>
+  L76: <button class="theme-btn" data-theme="neon" title="Neon" aria-pressed="false">∩┐╜</button>
+  L93: <button class="theme-btn active" data-theme="dark" title="Dark">∩┐╜</button>
+  L94: <button class="theme-btn" data-theme="light" title="Light">∩┐╜</button>
+  L95: <button class="theme-btn" data-theme="neon" title="Neon">∩┐╜</button>
+  L147: <h1 class="hero-title"><span class="hero-title-gold">∩┐╜ Adesewa<span class="hero-title-emoji">∩┐╜∩┐╜</spa
+  L153: TikTok Coach and Box Game Host &nbsp;∩┐╜&nbsp; Come LIVE with me <strong style="color:var(--gold)">Mon
+  L176: <p class="stat-number">∩┐╜</p>
+=== about.html: 1 broken lines ===
+  L187: <p class="footer-tagline">TikTok Coach &amp; Box Game Host ∩┐╜ The Quickers Agency Manager</p>
+=== contact.html: 1 broken lines ===
+  L173: <p class="footer-tagline">TikTok Coach &amp; Box Game Host ∩┐╜ The Quickers Agency Manager</p>
+=== gallery.html: 1 broken lines ===
+  L162: <p class="footer-tagline">TikTok Coach &amp; Box Game Host ∩┐╜ The Quickers Agency Manager</p>
+=== archives.html: 1 broken lines ===
+  L212: <p class="footer-tagline">TikTok Coach &amp; Box Game Host ∩┐╜ The Quickers Agency Manager</p>
+=== outreach.html: 1 broken lines ===
+  L195: <p class="footer-tagline">TikTok Coach &amp; Box Game Host ∩┐╜ The Quickers Agency Manager</p>

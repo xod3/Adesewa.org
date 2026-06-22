@@ -1,0 +1,8 @@
+﻿L176:                 <p class="stat-number">∩┐╜</p>
+L181:                 <p class="stat-number">∩┐╜</p>
+L186:                 <p class="stat-number">∩┐╜</p>
+L496:       ∩┐╜ HOW TO EDIT THE SCHEDULE:
+L521:         <!-- ∩┐╜ SCHEDULE CARDS ∩┐╜ edit each card below -->
+L539:                   <!-- ∩┐╜ Edit opponent name below -->
+L544:                 <!-- ∩┐╜ Edit date, time, platform below -->
+L644:         <!-- ∩┐╜ END SCHEDULE CARDS -->

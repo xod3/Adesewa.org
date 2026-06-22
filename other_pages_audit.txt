@@ -1,0 +1,4 @@
+﻿CLEAN: contact.html
+CLEAN: gallery.html
+CLEAN: archives.html
+CLEAN: outreach.html
