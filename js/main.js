@@ -180,17 +180,64 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
+      
       const submitBtn = contactForm.querySelector('[type="submit"]');
-      if (submitBtn) {
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Message Sent! ✓';
-        submitBtn.disabled = true;
-        setTimeout(() => {
-          submitBtn.textContent = originalText;
-          submitBtn.disabled = false;
-          contactForm.reset();
-        }, 3000);
+      if (!submitBtn || submitBtn.disabled) return;
+
+      const firstName = document.getElementById('contact-first-name')?.value.trim() || '';
+      const lastName = document.getElementById('contact-last-name')?.value.trim() || '';
+      const email = document.getElementById('contact-email-input')?.value.trim() || '';
+      const subject = document.getElementById('contact-subject')?.value.trim() || '';
+      const message = document.getElementById('contact-message')?.value.trim() || '';
+
+      if (!firstName || !lastName || !email || !subject || !message) {
+        alert('Please fill out all fields.');
+        return;
       }
+
+      const originalHTML = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<span>Sending...</span>';
+      submitBtn.disabled = true;
+
+      fetch('https://formsubmit.co/ajax/hello@adesewa.org', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          Name: `${firstName} ${lastName}`,
+          Email: email,
+          Subject: subject,
+          Message: message,
+          _subject: `New contact form submission: ${subject}`,
+          _captcha: 'false'
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success === 'true' || data.success === true) {
+          submitBtn.innerHTML = '<span>Message Sent! ✓</span>';
+          contactForm.reset();
+        } else {
+          submitBtn.innerHTML = '<span>Error! Try again</span>';
+          submitBtn.disabled = false;
+          console.error(data);
+        }
+        setTimeout(() => {
+          submitBtn.innerHTML = originalHTML;
+          submitBtn.disabled = false;
+        }, 4000);
+      })
+      .catch(error => {
+        submitBtn.innerHTML = '<span>Error! Try again</span>';
+        submitBtn.disabled = false;
+        console.error('Error submitting form:', error);
+        setTimeout(() => {
+          submitBtn.innerHTML = originalHTML;
+          submitBtn.disabled = false;
+        }, 4000);
+      });
     });
   }
 
