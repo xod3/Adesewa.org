@@ -219,6 +219,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.success === 'true' || data.success === true) {
           submitBtn.innerHTML = '<span>Message Sent! ✓</span>';
           contactForm.reset();
+        } else if (data.message && data.message.toLowerCase().includes('activ')) {
+          submitBtn.innerHTML = '<span>Activation Email Sent! Check Inbox</span>';
+          contactForm.reset();
         } else {
           submitBtn.innerHTML = '<span>Error! Try again</span>';
           submitBtn.disabled = false;
@@ -227,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
           submitBtn.innerHTML = originalHTML;
           submitBtn.disabled = false;
-        }, 4000);
+        }, 6000);
       })
       .catch(error => {
         submitBtn.innerHTML = '<span>Error! Try again</span>';
