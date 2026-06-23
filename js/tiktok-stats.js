@@ -6,8 +6,8 @@
  *
  *   <script>
  *     window.ADESEWA_STATS = {
- *       followers:  '15.5K',
- *       likes:      '73.9K',
+ *       followers:  '15.9K',
+ *       likes:      '76.7K',
  *       streams:    '300+',
  *       battlesWon: '10+'
  *     };
@@ -18,8 +18,8 @@
  */
 
 const TIKTOK_STATS = Object.assign({
-  followers:   '15.5K',
-  likes:       '73.9K',
+  followers:   '15.9K',
+  likes:       '76.7K',
   streams:     '300+',
   battlesWon:  '10+',
   profileUrl:  'https://www.tiktok.com/@sewa_hairmpire',
