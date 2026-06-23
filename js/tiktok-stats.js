@@ -121,10 +121,30 @@ function addLiveBanner() {
   statsBar.after(banner);
 }
 
+// ─── Fetch live stats from API ─────────────────────────────────────────────────
+function fetchLiveStats() {
+  fetch('/api/tiktok-stats')
+    .then(res => {
+      if (!res.ok) throw new Error('API response error');
+      return res.json();
+    })
+    .then(data => {
+      if (data && data.success) {
+        if (data.followers) TIKTOK_STATS.followers = data.followers;
+        if (data.likes) TIKTOK_STATS.likes = data.likes;
+        renderStats();
+      }
+    })
+    .catch(err => {
+      console.warn('Could not load live TikTok stats, using defaults:', err);
+    });
+}
+
 // ─── Init ─────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   injectStyles();
   renderStats();
   updateLinks();
   addLiveBanner();
+  fetchLiveStats();
 });
