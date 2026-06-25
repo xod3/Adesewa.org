@@ -326,9 +326,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---- Floating Soothing Background Opera Music Controller ----
+  // ---- Floating Adesewa Theme Song Controller ----
   (function initBackgroundMusic() {
-    const audioUrl = 'https://archive.org/download/cav-interm-mascagni-1940/cav%20interm%20mascagni%201940.mp3';
+    const audioUrl = '/assets/AdesewaThemeSong.mp3';
     
     // Create audio element
     const audio = document.createElement('audio');
@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const widget = document.createElement('div');
     widget.className = 'music-player-widget';
     widget.innerHTML = `
-      <span class="music-tooltip">Ambient Opera (8%)</span>
+      <span class="music-tooltip">Adesewa Theme Song ♪</span>
       <button class="music-btn" aria-label="Toggle ambient audio">
         <div class="music-waves">
           <div class="music-wave-bar"></div>
