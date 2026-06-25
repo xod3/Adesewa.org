@@ -326,4 +326,183 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---- Floating Soothing Background Opera Music Controller ----
+  (function initBackgroundMusic() {
+    const audioUrl = 'https://archive.org/download/cav-interm-mascagni-1940/cav%20interm%20mascagni%201940.mp3';
+    
+    // Create audio element
+    const audio = document.createElement('audio');
+    audio.id = 'bg-opera-audio';
+    audio.src = audioUrl;
+    audio.loop = true;
+    audio.volume = 0.08;
+    document.body.appendChild(audio);
+
+    // Inject CSS styles for the floating player
+    const style = document.createElement('style');
+    style.textContent = `
+      .music-player-widget {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Inter', sans-serif;
+      }
+      .music-btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(15, 13, 10, 0.75);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(245, 183, 49, 0.4);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gold, #f5b731);
+        transition: all 0.3s ease;
+        padding: 0;
+        outline: none;
+      }
+      .music-btn:hover {
+        border-color: var(--gold, #f5b731);
+        transform: scale(1.08);
+        box-shadow: 0 0 15px rgba(245, 183, 49, 0.3);
+      }
+      .music-btn.playing {
+        animation: pulse-border 2s infinite;
+      }
+      @keyframes pulse-border {
+        0%, 100% { border-color: rgba(245, 183, 49, 0.4); }
+        50% { border-color: var(--gold, #f5b731); }
+      }
+      .music-waves {
+        display: flex;
+        align-items: flex-end;
+        gap: 2px;
+        height: 14px;
+        width: 16px;
+      }
+      .music-wave-bar {
+        width: 2px;
+        height: 100%;
+        background-color: var(--gold, #f5b731);
+        border-radius: 1px;
+        transition: height 0.2s ease;
+        animation: wave-bounce 0.8s ease infinite alternate;
+        animation-play-state: paused;
+      }
+      .music-waves.playing .music-wave-bar {
+        animation-play-state: running;
+      }
+      .music-wave-bar:nth-child(2) { animation-delay: 0.15s; }
+      .music-wave-bar:nth-child(3) { animation-delay: 0.3s; }
+      .music-wave-bar:nth-child(4) { animation-delay: 0.45s; }
+      
+      @keyframes wave-bounce {
+        0% { height: 20%; }
+        100% { height: 100%; }
+      }
+      .music-tooltip {
+        background: rgba(15, 13, 10, 0.85);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(245, 183, 49, 0.2);
+        color: #fff;
+        font-size: 9px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 6px 12px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        opacity: 0;
+        transform: translateX(10px);
+        transition: all 0.3s ease;
+        pointer-events: none;
+        white-space: nowrap;
+      }
+      .music-player-widget:hover .music-tooltip {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Create widget container
+    const widget = document.createElement('div');
+    widget.className = 'music-player-widget';
+    widget.innerHTML = `
+      <span class="music-tooltip">Ambient Opera (8%)</span>
+      <button class="music-btn" aria-label="Toggle ambient audio">
+        <div class="music-waves">
+          <div class="music-wave-bar"></div>
+          <div class="music-wave-bar"></div>
+          <div class="music-wave-bar"></div>
+          <div class="music-wave-bar"></div>
+        </div>
+      </button>
+    `;
+    document.body.appendChild(widget);
+
+    const musicBtn = widget.querySelector('.music-btn');
+    const musicWaves = widget.querySelector('.music-waves');
+
+    function updateUI(isPlaying) {
+      if (isPlaying) {
+        musicBtn.classList.add('playing');
+        musicWaves.classList.add('playing');
+      } else {
+        musicBtn.classList.remove('playing');
+        musicWaves.classList.remove('playing');
+      }
+    }
+
+    function togglePlay() {
+      if (audio.paused) {
+        audio.play()
+          .then(() => updateUI(true))
+          .catch(err => console.warn('Audio play prevented:', err));
+      } else {
+        audio.pause();
+        updateUI(false);
+      }
+    }
+
+    musicBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      togglePlay();
+    });
+
+    // Try auto-play immediately
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          updateUI(true);
+        })
+        .catch(() => {
+          // Autoplay blocked (normal browser behavior)
+          updateUI(false);
+          
+          // Play smoothly upon first user interaction anywhere on the document
+          const playOnInteraction = () => {
+            audio.play()
+              .then(() => {
+                updateUI(true);
+                window.removeEventListener('click', playOnInteraction);
+                window.removeEventListener('touchstart', playOnInteraction);
+              })
+              .catch(err => console.warn('Play failed on interaction:', err));
+          };
+          window.addEventListener('click', playOnInteraction);
+          window.addEventListener('touchstart', playOnInteraction);
+        });
+    }
+  })();
+
 });
