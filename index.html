@@ -1371,20 +1371,68 @@
   <!-- ===== WELCOME POPUP MODAL ===== -->
   <div id="welcome-modal" class="wm-overlay" role="dialog" aria-modal="true" style="display:none">
     <div class="wm-backdrop"></div>
-    <div class="wm-panel" style="background-image:url('assets/hero-slide4.jpg')">
-      <div class="wm-overlay-inner"></div>
-      <div class="wm-content">
-        <div class="wm-eyebrow">
-          <div class="wm-eyebrow-line"></div>
-          <span>Welcome to my world</span>
-          <div class="wm-eyebrow-line"></div>
+
+    <!-- Outer decorative frame -->
+    <div class="wm-frame-outer">
+      <!-- Rotating shimmer border -->
+      <div class="wm-shimmer-ring"></div>
+      <!-- Inner frame accent -->
+      <div class="wm-frame-inner">
+        <div class="wm-panel" style="background-image:url('assets/hero-slide4.jpg')">
+          <div class="wm-overlay-inner"></div>
+
+          <!-- SVG Corner Ornaments -->
+          <svg class="wm-corner wm-corner-tl" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 30 L2 2 L30 2" stroke="#f5b731" stroke-width="2" stroke-linecap="round"/>
+            <path d="M2 2 L14 2" stroke="#f5b731" stroke-width="3" stroke-linecap="round"/>
+            <path d="M2 2 L2 14" stroke="#f5b731" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="2" cy="2" r="3" fill="#f5b731"/>
+            <circle cx="30" cy="2" r="1.5" fill="#f5b731" opacity="0.5"/>
+            <circle cx="2" cy="30" r="1.5" fill="#f5b731" opacity="0.5"/>
+          </svg>
+          <svg class="wm-corner wm-corner-tr" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M58 30 L58 2 L30 2" stroke="#f5b731" stroke-width="2" stroke-linecap="round"/>
+            <path d="M58 2 L46 2" stroke="#f5b731" stroke-width="3" stroke-linecap="round"/>
+            <path d="M58 2 L58 14" stroke="#f5b731" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="58" cy="2" r="3" fill="#f5b731"/>
+            <circle cx="30" cy="2" r="1.5" fill="#f5b731" opacity="0.5"/>
+            <circle cx="58" cy="30" r="1.5" fill="#f5b731" opacity="0.5"/>
+          </svg>
+          <svg class="wm-corner wm-corner-bl" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 30 L2 58 L30 58" stroke="#f5b731" stroke-width="2" stroke-linecap="round"/>
+            <path d="M2 58 L14 58" stroke="#f5b731" stroke-width="3" stroke-linecap="round"/>
+            <path d="M2 58 L2 46" stroke="#f5b731" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="2" cy="58" r="3" fill="#f5b731"/>
+            <circle cx="30" cy="58" r="1.5" fill="#f5b731" opacity="0.5"/>
+            <circle cx="2" cy="30" r="1.5" fill="#f5b731" opacity="0.5"/>
+          </svg>
+          <svg class="wm-corner wm-corner-br" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M58 30 L58 58 L30 58" stroke="#f5b731" stroke-width="2" stroke-linecap="round"/>
+            <path d="M58 58 L46 58" stroke="#f5b731" stroke-width="3" stroke-linecap="round"/>
+            <path d="M58 58 L58 46" stroke="#f5b731" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="58" cy="58" r="3" fill="#f5b731"/>
+            <circle cx="30" cy="58" r="1.5" fill="#f5b731" opacity="0.5"/>
+            <circle cx="58" cy="30" r="1.5" fill="#f5b731" opacity="0.5"/>
+          </svg>
+
+          <!-- Mid-edge diamond accents -->
+          <div class="wm-diamond wm-diamond-top">◆</div>
+          <div class="wm-diamond wm-diamond-bottom">◆</div>
+
+          <div class="wm-content">
+            <div class="wm-eyebrow">
+              <div class="wm-eyebrow-line"></div>
+              <span>Welcome to my world</span>
+              <div class="wm-eyebrow-line"></div>
+            </div>
+            <h2 class="wm-title">Welcome, Family! 💗🦅</h2>
+            <p class="wm-text">I'm so incredibly happy to have you here. Thank you for stepping into my world. Come join our amazing community, watch the livestreams, and let's grow together!</p>
+            <button class="wm-enter-btn" onclick="closeWelcomeModal()">
+              <span>Enter Site</span>
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
         </div>
-        <h2 class="wm-title">Welcome, Family! 💗🦅</h2>
-        <p class="wm-text">I'm so incredibly happy to have you here. Thank you for stepping into my world. Come join our amazing community, watch the livestreams, and let's grow together!</p>
-        <button class="wm-enter-btn" onclick="closeWelcomeModal()">
-          <span>Enter Site</span>
-          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
       </div>
     </div>
   </div>
@@ -1412,25 +1460,112 @@
       backdrop-filter: blur(15px);
       -webkit-backdrop-filter: blur(15px);
     }
+    /* === Outer frame wrapper === */
+    .wm-frame-outer {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0.88);
+      transition: transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .wm-overlay.show .wm-frame-outer {
+      transform: scale(1);
+    }
+
+    /* === Rotating shimmer gradient ring === */
+    .wm-shimmer-ring {
+      position: absolute;
+      inset: -6px;
+      border-radius: 34px;
+      background: conic-gradient(
+        from 0deg,
+        transparent 0deg,
+        rgba(245,183,49,0.0) 60deg,
+        rgba(245,183,49,0.9) 120deg,
+        rgba(255,220,100,1) 180deg,
+        rgba(245,183,49,0.9) 240deg,
+        rgba(245,183,49,0.0) 300deg,
+        transparent 360deg
+      );
+      animation: shimmer-rotate 4s linear infinite;
+      z-index: 0;
+    }
+    @keyframes shimmer-rotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    /* === Inner frame: dark gap + subtle gold border === */
+    .wm-frame-inner {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      border-radius: 30px;
+      padding: 5px;
+      background: linear-gradient(
+        135deg,
+        rgba(245,183,49,0.55) 0%,
+        rgba(30,25,15,1) 35%,
+        rgba(30,25,15,1) 65%,
+        rgba(245,183,49,0.55) 100%
+      );
+      box-shadow:
+        0 0 0 1px rgba(245,183,49,0.18),
+        0 0 40px rgba(245,183,49,0.18),
+        0 32px 90px rgba(0,0,0,0.9),
+        inset 0 0 20px rgba(245,183,49,0.06);
+    }
+
+    /* === The photo panel === */
     .wm-panel {
       position: relative;
       width: 100%;
-      max-width: 480px;
       aspect-ratio: 4/5;
       background-size: cover;
       background-position: center;
-      border-radius: 24px;
-      border: 1px solid rgba(245, 183, 49, 0.25);
-      box-shadow: 0 24px 80px rgba(0,0,0,0.85);
+      border-radius: 26px;
       overflow: hidden;
-      transform: scale(0.92);
-      transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      box-shadow: inset 0 0 0 1px rgba(245,183,49,0.12);
     }
-    .wm-overlay.show .wm-panel {
-      transform: scale(1);
+
+    /* === SVG Corner ornaments === */
+    .wm-corner {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      z-index: 10;
+      pointer-events: none;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 4px rgba(245,183,49,0.6));
+    }
+    .wm-corner-tl { top: -2px;  left: -2px; }
+    .wm-corner-tr { top: -2px;  right: -2px; }
+    .wm-corner-bl { bottom: -2px; left: -2px; }
+    .wm-corner-br { bottom: -2px; right: -2px; }
+
+    /* === Mid-edge diamond accents === */
+    .wm-diamond {
+      position: absolute;
+      z-index: 10;
+      color: #f5b731;
+      font-size: 9px;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 1;
+      filter: drop-shadow(0 0 5px rgba(245,183,49,0.9));
+      animation: diamond-pulse 2.5s ease-in-out infinite;
+    }
+    .wm-diamond-top    { top: -6px; }
+    .wm-diamond-bottom { bottom: -6px; }
+    @keyframes diamond-pulse {
+      0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(0.9); }
+      50%       { opacity: 1;   transform: translateX(-50%) scale(1.2); }
     }
     .wm-overlay-inner {
       position: absolute;
